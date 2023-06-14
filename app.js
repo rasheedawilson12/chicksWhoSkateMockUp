@@ -40,3 +40,12 @@ const changeTxt = () => {
   let contentInfo = document.querySelector(".contentInfo");
   contentInfo.innerHTML = `<p>Cupcake ipsum dolor sit amet lollipop. Marzipan soufflé danish jujubes marzipan. I love halvah bear claw carrot cake pie apple pie I love. Liquorice candy canes muffin chocolate topping apple pie brownie lemon drops. Chocolate bar apple pie chocolate bar lollipop cake marshmallow donut macaroon powder. Lemon drops I love dragée candy canes gummi bears marshmallow. Cookie liquorice tiramisu I love tart topping jelly-o. Carrot cake bonbon sesame snaps brownie liquorice I love tootsie roll cookie soufflé. I love candy bear claw chocolate cake chocolate cake cake gingerbread marzipan. Croissant apple pie gummies I love cookie biscuit topping dessert. Jelly beans marshmallow sweet jujubes icing tootsie roll. Marshmallow gummi bears chupa chups chocolate cupcake chupa chups toffee. Chocolate croissant cheesecake candy cupcake muffin.</p>`;
 };
+
+const changePic = () => {
+  let skatePic = document.querySelector(".skate");
+
+  skatePic.setAttribute(
+    "src",
+    "https://thumbs.gfycat.com/AdorableBothBrant-max-1mb.gif"
+  );
+};

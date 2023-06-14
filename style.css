@@ -42,6 +42,15 @@
   }
 }
 
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
 body {
   margin: 0;
   color: black;
@@ -86,6 +95,7 @@ body {
 }
 
 .changeTheme {
+  margin: 10px;
   background-color: black;
   color: white;
   border: 2px solid white;
@@ -103,6 +113,7 @@ body {
 }
 
 .light {
+  margin: 10px;
   background-color: white;
   color: black;
   border: 2px solid black;
@@ -121,15 +132,15 @@ body {
 
 .mainContainer {
   background-color: rgba(249, 245, 246, 0.5);
-  padding: 15px;
+  padding: 5px 25px;
   margin: 25px auto;
-  border: 5px solid white;
   width: 60%;
   border-radius: 25px;
 }
 
 .mainTitle {
   text-align: center;
+  font-size: 2em;
 }
 
 .rollerSkate {
@@ -142,8 +153,18 @@ body {
   animation: roll 15s ease-in-out infinite;
 }
 
+.skate:hover {
+  cursor: pointer;
+}
+
 .skateImg {
   width: 100%;
+}
+
+.skateImg:hover {
+  filter: hue-rotate(225deg);
+  cursor: pointer;
+  animation: flip 5s ease-in-out infinite;
 }
 
 .smSkate {
@@ -226,6 +247,8 @@ body {
 
 .galleryImg:hover {
   filter: grayscale(75%);
+  transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 .center {
