@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  border: solid black;
+}
+
+.header {
+  border: solid blue;
+  width: 70%;
+}
+
+.mainIcon {
+  border: solid red;
+}
+
+.icon {
+  border: solid pink;
+  width: 25%;
+}
+
+.title {
+  border: solid purple;
+  height: 22vh;
+  width: 75%;
+}
+
+.toggle {
+  border: solid green;
+  height: 22vh;
+  width: 30%;
+}
+
+.mainContainer {
+  margin: 25px auto;
+  border: solid turquoise;
+  width: 75%;
+  height: 200vh;
+}
+
+.mainTitle {
+  border: solid peru;
+  height: 15vh;
+}
+
+.rollerSkate {
+  border: solid orange;
+  height: 10vh;
+}
+
+.skate {
+  border: solid blue;
+}
+
+.mainImg {
+  border: solid lime;
+  height: 20vh;
+}
+
+.skateImg {
+  border: solid green;
+}
+
+.mainInfo {
+  border: solid pink;
+  height: 15vh;
+}
+
+.skateVideo {
+  border: solid black;
+  height: 30vh;
+}
+
+.gallery {
+  border: solid purple;
+  height: 60vh;
+}
+
+.rowOne,
+.rowTwo {
+  display: flex;
+  justify-content: space-evenly;
+  border: solid red;
+  height: 30vh;
+}
+
+.galleryImg {
+  border: solid lime;
+  height: 30px;
+  width: 33%;
+}
