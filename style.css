@@ -1,32 +1,113 @@
+/* KEYFRAMES */
+
+@keyframes background {
+  0% {
+    background-color: #ff78c4;
+  }
+  25% {
+    background-color: #f6ffa6;
+  }
+  50% {
+    background-color: #e1aeff;
+  }
+  75% {
+    background-color: #ffbdf7;
+  }
+  100% {
+    background-color: #ff78c4;
+  }
+}
+
+@keyframes theme {
+  0% {
+    background-color: #393646;
+  }
+  25% {
+    background-color: #4f4557;
+  }
+  50% {
+    background-color: #6d5d6e;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+
 body {
   margin: 0;
+  color: black;
+  animation: background 10s ease-in-out infinite;
+}
+
+.dark {
+  animation: theme 10s ease-in-out infinite;
+  color: white;
 }
 
 .navBar {
   display: flex;
-  justify-content: space-between;
-  border: solid black;
+  justify-content: space-evenly;
 }
 
 .header {
   display: flex;
-  border: solid blue;
   width: 100%;
+}
+
+.mainIcon {
+  display: flex;
+  align-items: center;
 }
 
 .icon {
   margin: 5px;
-  width: 30%;
+  width: 10%;
 }
 
 .title {
-  text-align: center;
-  font-size: 2.1em;
+  margin-left: 15px;
+  font-size: 5em;
 }
 
 .toggle {
-  border: solid green;
+  display: flex;
+  justify-content: flex-end;
   width: 20%;
+  height: 25%;
+}
+
+.changeTheme {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.changeTheme:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.light {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.light:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .mainContainer {
@@ -69,6 +150,10 @@ body {
   width: 33%;
 }
 
+.hidden {
+  display: none;
+}
+
 .button {
   margin: 5px;
   display: flex;
@@ -79,7 +164,7 @@ body {
 .moreInfo {
   background-color: blueviolet;
   color: white;
-  border: 1px solid white;
+  border: 3px solid white;
   border-radius: 20px;
   padding: 10px;
 }

@@ -17,14 +17,18 @@
             alt=""
             class="icon"
           />
+          <h1 class="title">Chics Who Skate</h1>
 
           <!-- NavBar Title -->
         </div>
-        <div class="title"><h1>Chics Who Skate</h1></div>
       </div>
 
       <!-- Toggle Button -->
-      <div class="toggle"></div>
+      <div class="toggle">
+        <button class="changeTheme" onclick="changeTheme()">
+          Change Theme
+        </button>
+      </div>
     </div>
     <!-- Main container -->
     <div class="mainContainer">
@@ -59,7 +63,7 @@
           carrot cake. Cake dragée danish cake sweet lemon drops sweet roll.
         </p>
       </div>
-      <div class="skateVideo">
+      <div class="skateVideo hidden">
         <div class="vidRow">
           <div class="vid">
             <iframe
@@ -97,7 +101,7 @@
         </div>
       </div>
       <div class="button">
-        <button class="moreInfo">Click for More Information</button>
+        <button class="moreInfo" onclick="showVideos()">Show Tutorials</button>
       </div>
       <div class="gallery">
         <div class="rowOne">
