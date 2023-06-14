@@ -33,6 +33,15 @@
   }
 }
 
+@keyframes roll {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(48vw);
+  }
+}
+
 body {
   margin: 0;
   color: black;
@@ -111,10 +120,12 @@ body {
 }
 
 .mainContainer {
+  background-color: rgba(249, 245, 246, 0.5);
   padding: 15px;
   margin: 25px auto;
-  border: solid turquoise;
+  border: 5px solid white;
   width: 60%;
+  border-radius: 25px;
 }
 
 .mainTitle {
@@ -122,20 +133,31 @@ body {
 }
 
 .rollerSkate {
-  border: solid orange;
+  margin: 5px;
 }
 
 .skate {
-  border: solid blue;
   width: 20%;
   height: 20%;
+  animation: roll 15s ease-in-out infinite;
 }
 
 .skateImg {
   width: 100%;
 }
 
+.smSkate {
+  width: 100%;
+}
+
+.smSkate:hover {
+  filter: hue-rotate(225deg);
+  cursor: pointer;
+}
+
 .mainInfo {
+  display: flex;
+  justify-content: space-evenly;
   font-size: 20px;
 }
 
@@ -161,7 +183,13 @@ body {
   align-items: center;
 }
 
-.moreInfo {
+.moreVideos {
+  display: flex;
+  justify-content: center;
+}
+
+.moreInfo,
+.moreVids {
   background-color: blueviolet;
   color: white;
   border: 3px solid white;
@@ -169,7 +197,8 @@ body {
   padding: 10px;
 }
 
-.moreInfo:hover {
+.moreInfo:hover,
+.moreVids:hover {
   background-color: white;
   color: blueviolet;
   border: 1px solid blueviolet;
@@ -193,4 +222,30 @@ body {
 
 .galleryImg {
   width: 33%;
+}
+
+.galleryImg:hover {
+  filter: grayscale(75%);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.newPlaylist {
+  background-color: blueviolet;
+  color: white;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.newPlaylist:hover {
+  background-color: white;
+  color: blueviolet;
+  border: 1px solid blueviolet;
+  cursor: pointer;
+  transition: 1s ease-in-out;
 }

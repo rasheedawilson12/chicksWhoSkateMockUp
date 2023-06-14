@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      rel="icon"
+      href="https://media1.giphy.com/media/Ma6BvDtabLgkRBm6xE/giphy.gif?cid=6c09b9522796a4d1bf7dcb72581631da8e6a847abaa88611&ep=v1_internal_gifs_gifId&rid=giphy.gif&ct=s"
+    />
+    <title>Chics Who Skate</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -51,21 +55,33 @@
         />
       </div>
       <div class="mainInfo">
-        <p>
-          Cupcake ipsum dolor sit amet toffee. I love bonbon cupcake pie jelly
-          caramels brownie. Toffee bonbon carrot cake lollipop I love chocolate
-          cake.
-        </p>
-        <p>
-          Liquorice shortbread lemon drops sesame snaps I love candy canes.
-          Sesame snaps toffee sweet bear claw I love biscuit dessert cheesecake.
-          Pastry cake toffee cheesecake ice cream apple pie candy macaroon
-          carrot cake. Cake dragée danish cake sweet lemon drops sweet roll.
-        </p>
+        <div class="pic">
+          <img
+            src="https://static.wixstatic.com/media/d2f8ab_f9a7b4c9e1604b49b4574d31884c9a83~mv2.gif"
+            alt=""
+            class="smSkate"
+            onclick="changeTxt()"
+          />
+        </div>
+        <div class="contentInfo">
+          <p>
+            Candy bonbon pudding biscuit sweet roll biscuit tiramisu chocolate
+            sweet roll. Muffin topping jujubes caramels croissant. Sweet apple
+            pie cheesecake tootsie roll croissant biscuit. Toffee sweet roll
+            wafer pudding cupcake fruitcake caramels. Gummies carrot cake sesame
+            snaps cake marshmallow fruitcake. Pie donut candy canes tiramisu
+            halvah candy canes. Donut jujubes lemon drops cupcake bear claw
+            jelly-o. Cupcake lemon drops gingerbread candy lemon drops croissant
+            carrot cake apple pie. Cupcake chocolate cake lemon drops toffee
+            cheesecake. Soufflé jelly beans dessert marzipan wafer. Gummies
+            brownie donut fruitcake ice cream chocolate. Carrot cake pie
+            chocolate bar liquorice carrot cake muffin wafer.
+          </p>
+        </div>
       </div>
       <div class="skateVideo hidden">
         <div class="vidRow">
-          <div class="vid">
+          <div class="vid vidOne">
             <iframe
               width="100%"
               height="100%"
@@ -76,7 +92,7 @@
               allowfullscreen
             ></iframe>
           </div>
-          <div class="vid">
+          <div class="vid vidTwo">
             <iframe
               width="100%"
               height="100%"
@@ -87,7 +103,7 @@
               allowfullscreen
             ></iframe>
           </div>
-          <div class="vid">
+          <div class="vid vidThree">
             <iframe
               width="100%"
               height="100%"
@@ -99,9 +115,12 @@
             ></iframe>
           </div>
         </div>
+        <div class="moreVideos">
+          <button class="moreVids" onclick="moreVideos()">More Videos</button>
+        </div>
       </div>
       <div class="button">
-        <button class="moreInfo" onclick="showVideos()">Show Tutorials</button>
+        <button class="moreInfo" onclick="showVideos()">Show Videos</button>
       </div>
       <div class="gallery">
         <div class="rowOne">
@@ -124,7 +143,7 @@
       </div>
       <div class="playlist">
         <div class="rowTwo">
-          <div>
+          <div class="playlist">
             <iframe
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZXHVUlGM9Wp?utm_source=generator"
@@ -138,6 +157,12 @@
           </div>
         </div>
       </div>
+      <div class="center">
+        <button class="newPlaylist" onclick="newPlaylist()">
+          🎶Try Another Playlist 🎶
+        </button>
+      </div>
+      <div class="skateCamp"></div>
     </div>
 
     <script src="app.js"></script>
