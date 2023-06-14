@@ -9,29 +9,29 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   border: solid blue;
-  width: 70%;
+  width: 80%;
 }
 
 .mainIcon {
+  display: flex;
+  justify-content: space-around;
   border: solid red;
 }
 
 .icon {
-  border: solid pink;
-  width: 25%;
+  width: 20%;
 }
 
 .title {
-  border: solid purple;
-  height: 22vh;
   width: 75%;
 }
 
 .toggle {
   border: solid green;
-  height: 22vh;
-  width: 30%;
+  width: 20%;
 }
 
 .mainContainer {
