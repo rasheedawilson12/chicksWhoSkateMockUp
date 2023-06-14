@@ -10,23 +10,18 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
   border: solid blue;
-  width: 80%;
-}
-
-.mainIcon {
-  display: flex;
-  justify-content: space-around;
-  border: solid red;
+  width: 100%;
 }
 
 .icon {
-  width: 20%;
+  margin: 5px;
+  width: 30%;
 }
 
 .title {
-  width: 75%;
+  text-align: center;
+  font-size: 2.1em;
 }
 
 .toggle {
@@ -35,60 +30,82 @@ body {
 }
 
 .mainContainer {
+  padding: 15px;
   margin: 25px auto;
   border: solid turquoise;
-  width: 75%;
-  height: 200vh;
+  width: 60%;
 }
 
 .mainTitle {
-  border: solid peru;
-  height: 15vh;
+  text-align: center;
 }
 
 .rollerSkate {
   border: solid orange;
-  height: 10vh;
 }
 
 .skate {
   border: solid blue;
-}
-
-.mainImg {
-  border: solid lime;
-  height: 20vh;
+  width: 20%;
+  height: 20%;
 }
 
 .skateImg {
-  border: solid green;
+  width: 100%;
 }
 
 .mainInfo {
-  border: solid pink;
-  height: 15vh;
+  font-size: 20px;
 }
 
-.skateVideo {
-  border: solid black;
-  height: 30vh;
+.vidRow {
+  display: flex;
+  justify-content: space-around;
+  height: 40vh;
+}
+.vid {
+  border: solid deeppink;
+  margin: 5px;
+  width: 33%;
+}
+
+.button {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moreInfo {
+  background-color: blueviolet;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.moreInfo:hover {
+  background-color: white;
+  color: blueviolet;
+  border: 1px solid blueviolet;
+  cursor: pointer;
+  transition: 1s ease-in-out;
 }
 
 .gallery {
-  border: solid purple;
-  height: 60vh;
-}
-
-.rowOne,
-.rowTwo {
-  display: flex;
-  justify-content: space-evenly;
-  border: solid red;
-  height: 30vh;
+  margin: 10px;
 }
 
 .galleryImg {
-  border: solid lime;
-  height: 30px;
+  border: solid deeppink;
+  margin: 5px;
+}
+
+.rowOne {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.galleryImg {
   width: 33%;
 }
