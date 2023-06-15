@@ -21,7 +21,7 @@ const showVideos = () => {
 // Functions
 const newPlaylist = () => {
   const playlist = document.querySelector(".playlist");
-  playlist.innerHTML = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZXHVUlGM9Wp?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+  playlist.innerHTML = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6dBOGTqPiGRufk4JejCMRh?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
 };
 
 const moreVideos = () => {
